@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPapercupsConfig } from '@/src/config/integrations/papercups';
 
+export const dynamic = 'force-dynamic';
+
 interface PapercupsWebhookPayload {
   type: string;
   data: {

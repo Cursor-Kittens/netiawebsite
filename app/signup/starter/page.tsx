@@ -72,53 +72,8 @@ export default function StarterSignup() {
         sessionStorage.setItem('temp_account_id', accountId.toString())
       }
 
-      // Ensure we have a valid Netia account ID before proceeding to Stripe
-      if (!accountId) {
-        setErrors(['Unable to determine account ID after registration. Please try again.'])
-        setIsSubmitting(false)
-        return
-      }
-
-      // Step 2: Create Stripe Checkout Session
-      const checkoutResponse = await fetch('/api/checkout/create', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: formData.email,
-          accountId,
-        }),
-      })
-
-      const checkoutData = await checkoutResponse.json()
-
-      if (!checkoutResponse.ok) {
-        // Log full error details for debugging
-        console.error('Checkout error:', checkoutData)
-        
-        // Build error message with details
-        let errorMessage = checkoutData.error || 'Failed to create checkout session'
-        if (checkoutData.code) {
-          errorMessage += ` (Code: ${checkoutData.code})`
-        }
-        if (checkoutData.param) {
-          errorMessage += ` (Param: ${checkoutData.param})`
-        }
-        if (checkoutData.message) {
-          errorMessage += ` - ${checkoutData.message}`
-        }
-        
-        setErrors([errorMessage])
-        setIsSubmitting(false)
-        return
-      }
-
-      // Step 3: Redirect to Stripe Checkout
-      if (checkoutData.url) {
-        window.location.href = checkoutData.url
-      } else {
-        setErrors(['Failed to redirect to payment'])
-        setIsSubmitting(false)
-      }
+      // Redirect to success page (Stripe checkout bypassed for now)
+      window.location.href = '/signup/success'
     } catch (error) {
       console.error('Signup error:', error)
       setErrors(['Network error. Please try again.'])
@@ -281,7 +236,6 @@ export default function StarterSignup() {
 
             <p className="text-xs text-muted text-center mt-6">
               By signing up, you agree to our Terms of Service and Privacy Policy.
-              You&apos;ll be redirected to Stripe to add your payment method for after your trial ends.
             </p>
           </div>
         </div>
