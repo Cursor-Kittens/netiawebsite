@@ -1,91 +1,39 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 
 export default function SignupSuccess() {
-  const router = useRouter()
-  const searchParams = useSearchParams()
-  const sessionId = searchParams.get('session_id')
-  const [isVerifying, setIsVerifying] = useState(true)
-  const [isVerified, setIsVerified] = useState(false)
-  const [error, setError] = useState('')
+  const [isProcessing, setIsProcessing] = useState(true)
 
   useEffect(() => {
-    const verifySession = async () => {
-      console.log('Success page loaded, sessionId:', sessionId)
+    // Get stored tokens and account info from sessionStorage
+    const tempTokens = sessionStorage.getItem('temp_tokens')
+    const tempEmail = sessionStorage.getItem('temp_account_email')
+
+    if (tempTokens && tempEmail) {
+      const tokens = JSON.parse(tempTokens)
       
-      if (!sessionId) {
-        console.error('No session ID found')
-        setError('Missing session ID')
-        setIsVerifying(false)
-        return
-      }
+      // Store tokens permanently in localStorage
+      localStorage.setItem('netia_customer_token', tokens.token)
+      localStorage.setItem('netia_customer_renew_token', tokens.renew_token)
+      localStorage.setItem('netia_customer_logged_in', 'true')
+      localStorage.setItem('netia_customer_email', tempEmail)
 
-      try {
-        console.log('Starting session verification...')
-        // Verify Stripe session
-        console.log('Calling /api/checkout/verify with sessionId:', sessionId)
-        const response = await fetch(`/api/checkout/verify?session_id=${sessionId}`)
-        const data = await response.json()
-        
-        console.log('Verification response:', { status: response.status, data })
-
-        if (!response.ok || !data.success) {
-          console.error('Verification failed:', data)
-          setError(data.error || 'Failed to verify payment session')
-          setIsVerifying(false)
-          return
-        }
-
-        // Get stored tokens and account info from sessionStorage
-        const tempTokens = sessionStorage.getItem('temp_tokens')
-        const tempEmail = sessionStorage.getItem('temp_account_email')
-        
-        console.log('SessionStorage data:', { 
-          hasTokens: !!tempTokens, 
-          hasEmail: !!tempEmail
-        })
-
-        if (tempTokens && tempEmail) {
-          const tokens = JSON.parse(tempTokens)
-          
-          // Store tokens permanently in localStorage
-          localStorage.setItem('netia_customer_token', tokens.token)
-          localStorage.setItem('netia_customer_renew_token', tokens.renew_token)
-          localStorage.setItem('netia_customer_logged_in', 'true')
-          localStorage.setItem('netia_customer_email', tempEmail)
-
-          // We now rely on backend Stripe webhooks to attach subscription to the account.
-          // No explicit linking call here; backend processes checkout.session.completed / subscription events.
-
-          // Clear temporary storage
-          sessionStorage.removeItem('temp_tokens')
-          sessionStorage.removeItem('temp_account_email')
-          sessionStorage.removeItem('temp_account_id')
-
-          setIsVerified(true)
-          
-          // Redirect to app.netia.ai for login (tokens won't work cross-domain)
-          setTimeout(() => {
-            window.location.href = 'https://app.netia.ai/login'
-          }, 2000)
-        } else {
-          setError('Session data not found. Please try logging in.')
-          setIsVerifying(false)
-        }
-      } catch (error) {
-        console.error('Verification error:', error)
-        const errorMessage = error instanceof Error ? error.message : 'Unknown error'
-        setError(`Failed to verify session: ${errorMessage}`)
-        setIsVerifying(false)
-      }
+      // Clear temporary storage
+      sessionStorage.removeItem('temp_tokens')
+      sessionStorage.removeItem('temp_account_email')
+      sessionStorage.removeItem('temp_account_id')
     }
 
-    verifySession()
-  }, [sessionId, router])
+    setIsProcessing(false)
+    
+    // Redirect to app.netia.ai for login
+    setTimeout(() => {
+      window.location.href = 'https://app.netia.ai/login'
+    }, 2000)
+  }, [])
 
   return (
     <div className="min-h-screen bg-white">
@@ -93,29 +41,14 @@ export default function SignupSuccess() {
       <main className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto text-center">
-            {/* Debug info - remove in production */}
-            {process.env.NODE_ENV === 'development' && (
-              <div className="mb-4 p-2 bg-gray-100 text-xs text-left">
-                <div>Session ID: {sessionId || 'None'}</div>
-                <div>Is Verifying: {isVerifying ? 'Yes' : 'No'}</div>
-                <div>Is Verified: {isVerified ? 'Yes' : 'No'}</div>
-                <div>Error: {error || 'None'}</div>
-              </div>
-            )}
-            
-            {isVerifying && (
+            {isProcessing ? (
               <>
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500 mx-auto mb-4"></div>
                 <h1 className="font-display text-2xl font-semibold text-fg mb-2">
-                  Verifying your payment...
+                  Setting up your account...
                 </h1>
-                <p className="text-muted">
-                  Please wait while we confirm your subscription.
-                </p>
               </>
-            )}
-
-            {isVerified && !error && (
+            ) : (
               <>
                 <div className="mb-6">
                   <svg className="w-16 h-16 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,30 +59,8 @@ export default function SignupSuccess() {
                   Account Created Successfully!
                 </h1>
                 <p className="text-muted mb-6">
-                  Your 7-day free trial has started. Redirecting to login...
+                  Your free trial has started. Redirecting to login...
                 </p>
-              </>
-            )}
-
-            {error && (
-              <>
-                <div className="mb-6">
-                  <svg className="w-16 h-16 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </div>
-                <h1 className="font-display text-2xl font-semibold text-fg mb-2">
-                  Verification Failed
-                </h1>
-                <p className="text-muted mb-6">
-                  {error}
-                </p>
-                <button
-                  onClick={() => window.location.href = 'https://app.netia.ai/login'}
-                  className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors"
-                >
-                  Go to Login
-                </button>
               </>
             )}
           </div>
