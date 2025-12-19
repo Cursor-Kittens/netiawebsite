@@ -17,16 +17,16 @@ export const AnimatedChat = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
   const chatMessages: Omit<Message, 'id'>[] = useMemo(() => [
-    { text: "Hey! I'm looking for a dentist - what kind of stuff do you guys do?", isUser: true, delay: 750 },
-    { text: "We offer comprehensive dental services including cleanings ($120), fillings ($180), crowns ($1200), and cosmetic procedures. What type of service are you looking for?", isUser: false, delay: 1500 },
-    { text: "When are you open? I work during the day so I need something after hours", isUser: true, delay: 1500 },
-    { text: "We're open Monday-Friday 8am-6pm, Saturday 9am-3pm, and closed Sundays. We also offer evening appointments until 7pm on Tuesdays and Thursdays.", isUser: false, delay: 1500 },
-    { text: "Cool! Do you take insurance? I have Delta Dental", isUser: true, delay: 1500 },
-    { text: "Yes! We accept most major insurance plans including Delta Dental, Cigna, Aetna, and MetLife. We also offer flexible payment plans and a 5% discount for cash payments.", isUser: false, delay: 1500 },
-    { text: "Perfect! I need a cleaning and checkup - what's that gonna cost me?", isUser: true, delay: 1500 },
-    { text: "A cleaning and checkup is $180 total. This includes exam, cleaning, and X-rays if needed. With insurance, you'd typically pay just your copay. Would you like to schedule an appointment?", isUser: false, delay: 1500 },
-    { text: "Yeah that sounds good, how do I book something?", isUser: true, delay: 1500 },
-    { text: "Great! Here's our scheduling calendar where you can see available times and book your appointment:", isUser: false, delay: 1500 }
+    { text: "Hi! My AC just stopped working and it's really hot. How soon can someone come out?", isUser: true, delay: 750 },
+    { text: "I'm sorry to hear that! We have same-day emergency service available. Our next opening is today at 3:00 PM or 5:30 PM. Which works better for you?", isUser: false, delay: 1500 },
+    { text: "3 PM works! What's the service call fee?", isUser: true, delay: 1500 },
+    { text: "Our emergency service call is $89, which includes the diagnostic. If you proceed with the repair, that fee is waived and applied to the total cost.", isUser: false, delay: 1500 },
+    { text: "That's fair. What brands do you work on? I have a Carrier unit", isUser: true, delay: 1500 },
+    { text: "We service all major brands including Carrier, Trane, Lennox, Rheem, and Goodman. Our techs are factory-trained and we stock common parts for faster repairs.", isUser: false, delay: 1500 },
+    { text: "Great! Do you also do maintenance plans?", isUser: true, delay: 1500 },
+    { text: "Yes! Our maintenance plan is $179/year and includes 2 tune-ups (spring AC, fall heating), priority scheduling, and 15% off all repairs. It helps prevent breakdowns like this!", isUser: false, delay: 1500 },
+    { text: "Sounds good. Let's book that 3 PM appointment!", isUser: true, delay: 1500 },
+    { text: "Perfect! I'll get you scheduled for 3:00 PM today. Here's our booking calendar to confirm:", isUser: false, delay: 1500 }
   ], [])
 
   // Auto-scroll to bottom when new messages arrive
@@ -146,7 +146,7 @@ export const AnimatedChat = () => {
       <div className="flex gap-2">
         <input
           type="text"
-          placeholder="Try asking about pricing, hours, or services..."
+          placeholder="Try asking about emergency service, pricing, or maintenance..."
           className="flex-1 px-4 py-2 border border-border rounded-lg text-xs bg-white"
           disabled
         />

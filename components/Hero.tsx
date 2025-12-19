@@ -28,7 +28,7 @@ export const Hero = () => {
           {/* Left column */}
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-fg leading-tight">
-              Never Miss Another <span className="text-primary-500">Appointment</span>
+              Never Miss Another <span className="text-primary-500">Service Call</span>
             </h1>
             <div className="mt-1 flex items-center gap-0">
               <span className="text-base text-gray-700">Powered by</span>
@@ -37,7 +37,7 @@ export const Hero = () => {
               </div>
             </div>
             <p className="mt-4 text-lg md:text-xl text-muted leading-relaxed max-w-2xl">
-              Your potential customers are browsing your services on your website—ready to book. Netia answers questions 24/7 and schedules consultations instantly.
+              Your customers need HVAC help now—whether it's 2 PM or 2 AM. Netia answers questions 24/7, schedules service calls instantly, and captures every emergency repair opportunity.
             </p>
             <div className="mt-6 inline-flex items-center rounded-full border border-green-200 bg-green-50 px-4 py-2.5 text-sm text-green-700">
               <span>Free trial</span>
@@ -68,7 +68,7 @@ export const Hero = () => {
             </div>
             </div>
 
-          {/* Right column visual (dental chat) */}
+          {/* Right column visual (HVAC chat) */}
           <div className="hidden md:block">
             <div className="relative overflow-hidden rounded-xl border bg-white p-6 shadow-sm h-[28rem]">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-50/10 via-transparent to-transparent pointer-events-none" />
@@ -96,7 +96,7 @@ export const Hero = () => {
                 {/* Customer */}
                 <div className="flex justify-end">
                   <div className="bg-gray-100 rounded-2xl rounded-br-md px-4 py-2 max-w-xs">
-                    <p className="text-sm text-gray-800">Hi! Do you offer teeth cleaning and whitening?</p>
+                    <p className="text-sm text-gray-800">Hi! My AC stopped working and it's 95 degrees. How soon can someone come out?</p>
                   </div>
                 </div>
                 {/* AI */}
@@ -105,31 +105,31 @@ export const Hero = () => {
                     <div className="w-3 h-3 bg-white rounded-full" />
                   </div>
                   <div className="bg-blue-600 rounded-2xl rounded-bl-md px-4 py-2 max-w-xs">
-                    <p className="text-sm text-white">Yes, we offer routine cleanings and whitening. Our new patient special (cleaning + exam + X‑rays) is $180. Would you like to see our availability?</p>
+                    <p className="text-sm text-white">I'm sorry to hear that! We have same-day emergency service available. Our next opening is today at 3:00 PM or 5:30 PM. Which works better?</p>
                   </div>
                 </div>
                 {/* Customer */}
                 <div className="flex justify-end">
                   <div className="bg-gray-100 rounded-2xl rounded-br-md px-4 py-2 max-w-xs">
-                    <p className="text-sm text-gray-800">Yeah, that would be great. What insurances do you take?</p>
+                    <p className="text-sm text-gray-800">3 PM works! What's the service call fee?</p>
                   </div>
                 </div>
-                {/* AI insurances + calendar */}
+                {/* AI pricing + calendar */}
                 <div className="flex items-start gap-2">
                   <div className="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-white rounded-full" />
                   </div>
                   <div className="bg-blue-600 rounded-2xl rounded-bl-md px-4 py-2 max-w-xs">
-                    <p className="text-sm text-white">We accept Delta Dental, MetLife, Cigna, Aetna, Guardian, and most PPO plans. Here’s our calendar:</p>
+                    <p className="text-sm text-white">Our emergency service call is $89, which includes diagnostic. If you proceed with the repair, that fee is waived. I'll book you for 3 PM!</p>
                     <div className="mt-2 bg-white/20 rounded-lg px-3 py-2">
-                      <p className="text-xs text-white font-medium">📅 Book Your Appointment</p>
+                      <p className="text-xs text-white font-medium">🗓️ Book Your Service Call</p>
                     </div>
                   </div>
                 </div>
                 {/* Customer final short reply */}
                 <div className="flex justify-end">
                   <div className="bg-gray-100 rounded-2xl rounded-br-md px-4 py-2 max-w-xs">
-                    <p className="text-sm text-gray-800">Great, thank you.</p>
+                    <p className="text-sm text-gray-800">Perfect, thank you!</p>
                   </div>
                 </div>
               </div>

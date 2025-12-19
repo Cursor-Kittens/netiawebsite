@@ -4,52 +4,52 @@ import { Footer } from '@/components/Footer'
 import { CheckIcon, SparklesIcon, ClockIcon, ShieldCheckIcon, ChatBubbleLeftRightIcon, CogIcon } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
-  title: 'Features - Netia AI Customer Service',
-  description: 'Discover Netia\'s powerful AI features: GPT-4 integration, 24/7 availability, instant responses, and seamless business integration.',
-  keywords: ['AI features', 'customer service automation', 'GPT integration', 'business AI', 'Netia features'],
+  title: 'Features - Netia AI for HVAC',
+  description: 'Discover Netia\'s powerful AI features for HVAC businesses: 24/7 emergency call capture, service scheduling, and lead qualification.',
+  keywords: ['HVAC AI', 'HVAC customer service', 'HVAC chatbot', 'emergency service calls', 'Netia features'],
 }
 
 const features = [
   {
-    name: 'Answer Visitor Questions Instantly',
-    description: 'Someone lands on your website and has questions. Our chatbot answers them right away - even at 2 AM. No more "we\'ll get back to you."',
+    name: 'Capture Emergency Calls 24/7',
+    description: 'AC breaks at midnight? Furnace fails on a weekend? Your AI assistant captures every emergency inquiry—even when you\'re asleep or on a service call.',
     icon: ChatBubbleLeftRightIcon,
-    highlights: ['Works 24/7', 'Answers fast', 'Saves you time'],
+    highlights: ['Works 24/7', 'Captures emergencies', 'Never misses a lead'],
     isComingSoon: false
   },
   {
-    name: 'Capture Every Client',
-    description: 'When someone visits your site, we don\'t let them leave without their contact info. We ask the right questions and get their email or phone.',
+    name: 'Qualify HVAC Leads Instantly',
+    description: 'We ask the right questions: heating or cooling? Repair or replacement? Property type? By the time you call back, you know exactly what they need.',
     icon: SparklesIcon,
-    highlights: ['Never lose a client', 'Collect contact info', 'Follow up automatically'],
+    highlights: ['Pre-qualifies leads', 'Collects property info', 'Prepares your techs'],
     isComingSoon: false
   },
   {
-    name: 'Book Appointments Automatically',
-    description: 'Your visitor wants to schedule? We handle it. We share your calendar link and help them pick a time that works.',
+    name: 'Book Service Calls Automatically',
+    description: 'Customer ready to schedule? We handle it. Share your calendar, show available slots, and book the appointment—no phone tag required.',
     icon: ClockIcon,
-    highlights: ['Books appointments', 'Sends calendar links', 'Confirms bookings'],
+    highlights: ['Books service calls', 'Shows availability', 'Confirms appointments'],
     isComingSoon: false
   },
   {
-    name: 'Know Your Business',
-    description: 'Tell us your hours, prices, and services once. We remember everything and give customers the right answers every time.',
+    name: 'Knows Your HVAC Business',
+    description: 'Tell us your service areas, pricing, and brands once. We remember everything and give customers accurate answers about emergency service, maintenance plans, and installations.',
     icon: ShieldCheckIcon,
-    highlights: ['Remembers your info', 'Gets answers right', 'No training needed'],
+    highlights: ['Remembers your info', 'Answers correctly', 'No training needed'],
     isComingSoon: false
   },
   {
-    name: 'Your Data is Private',
-    description: 'Your customer conversations stay private. We don\'t share your data with anyone. Each business gets their own secure space.',
+    name: 'Your Data Stays Private',
+    description: 'Customer conversations and business info stay secure. We don\'t share your data with anyone. Each HVAC company gets their own protected workspace.',
     icon: ShieldCheckIcon,
-    highlights: ['Data stays private', 'Secure storage', 'Your information protected'],
+    highlights: ['Data stays private', 'Secure storage', 'Business info protected'],
     isComingSoon: false
   },
   {
     name: 'Powered by OpenAI',
-    description: 'Built with cutting-edge AI technology that understands context and delivers smart, helpful responses to your patients.',
+    description: 'Built with cutting-edge AI technology that understands HVAC terminology and delivers smart, helpful responses—from filter questions to furnace failures.',
     icon: CogIcon,
-    highlights: ['Using the latest models', 'Contextual understanding', 'Natural conversations'],
+    highlights: ['Latest AI models', 'HVAC-trained responses', 'Natural conversations'],
     isComingSoon: false
   }
 ]
@@ -65,10 +65,10 @@ export default function FeaturesPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="font-display font-semibold text-4xl md:text-5xl text-fg mb-4">
-              How Netia Helps Your Business
+              How Netia Helps Your HVAC Business
             </h1>
             <p className="text-xl text-muted mb-8 max-w-2xl mx-auto">
-              When someone visits your website, we help you turn them into a paying customer
+              Capture every emergency call, book more service appointments, and never lose another lead—even at 2 AM
             </p>
           </div>
 
@@ -136,10 +136,10 @@ export default function FeaturesPage() {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h2 className="font-display font-semibold text-3xl md:text-4xl mb-6">
-              Ready to Turn More Visitors Into Customers?
+              Ready to Capture Every HVAC Lead?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Stop losing potential clients on your website. Start capturing them today.
+              Stop losing emergency calls and service opportunities. Start capturing them today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -9,7 +9,7 @@ export const Performance = () => {
               Built for reliability
             </h2>
             <p className="font-display text-xl md:text-2xl lg:text-3xl font-semibold text-muted mb-8">
-              AI that works when you need it most
+              AI that's there when the AC breaks at midnight
             </p>
           </header>
 
@@ -24,7 +24,7 @@ export const Performance = () => {
                   Always available
                 </h3>
                 <p className="text-muted leading-relaxed">
-                  AI responds to customer questions around the clock, even outside business hours
+                  AI responds to HVAC emergencies around the clock, capturing service calls even when your phones are off
                 </p>
               </div>
             </article>

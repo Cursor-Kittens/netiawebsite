@@ -2,8 +2,8 @@ export const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "Add your practice details",
-      description: "Input your hours, services, and consultation prices. Takes 5 minutes.",
+      title: "Add your business details",
+      description: "Input your service areas, pricing, brands you service, and maintenance plans. Takes 5 minutes.",
       action: "Get started"
     },
     {
@@ -14,14 +14,14 @@ export const Process = () => {
     },
     {
       number: "03",
-      title: "Start Booking Appointments", 
-      description: "Your AI starts working immediately—booking consultations and answering patient questions. No training required.",
+      title: "Start Booking Service Calls", 
+      description: "Your AI starts working immediately—scheduling emergency repairs, maintenance visits, and installation consultations. No training required.",
       action: "See it in action"
     },
     {
       number: "04",
-      title: "Watch Your Practice Grow",
-      description: "More scheduled appointments, fewer missed inquiries, happier patients.",
+      title: "Watch Your Business Grow",
+      description: "More booked service calls, fewer missed emergencies, happier customers with AC and heat when they need it most.",
       action: "View dashboard"
     }
   ]
@@ -34,8 +34,8 @@ export const Process = () => {
             From Setup to Success in 15 Minutes
           </h2>
           <p className="text-lg text-muted max-w-3xl mx-auto">
-            Tell us about your practice, add our widget to your website, and start booking appointments immediately. 
-            Simple setup, powerful results—just add your information and watch the consultations roll in.
+            Tell us about your HVAC business, add our widget to your website, and start booking service calls immediately. 
+            Simple setup, powerful results—capture every emergency call and maintenance opportunity.
           </p>
         </div>
 

@@ -14,10 +14,10 @@ export default function ProfilesFeature() {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="font-display text-4xl md:text-5xl font-semibold text-fg mb-4">
-              Business Profiles
+              HVAC Business Profiles
             </h1>
             <p className="text-lg text-muted max-w-2xl mx-auto">
-              Create detailed business profiles that help your AI assistant provide accurate, personalized responses to every customer question.
+              Create detailed business profiles that help your AI assistant answer HVAC questions accurately—from emergency service to maintenance plans.
             </p>
           </div>
 
@@ -149,23 +149,23 @@ export default function ProfilesFeature() {
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-muted">Business Name:</span>
-                        <span className="text-fg">Acme Dental Practice</span>
+                        <span className="text-fg">Acme HVAC Services</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted">Hours:</span>
-                        <span className="text-fg">Mon-Fri 9AM-5PM</span>
+                        <span className="text-muted">Service Area:</span>
+                        <span className="text-fg">Metro Area + 25mi</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted">Services:</span>
-                        <span className="text-fg">3 configured</span>
+                        <span className="text-fg">AC, Heating, Installs</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted">Policies:</span>
-                        <span className="text-fg">2 configured</span>
+                        <span className="text-muted">Brands:</span>
+                        <span className="text-fg">Carrier, Trane, Lennox</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted">Branding:</span>
-                        <span className="text-fg">Custom logo set</span>
+                        <span className="text-muted">Emergency:</span>
+                        <span className="text-fg">24/7 Available</span>
                       </div>
                     </div>
                   </div>
@@ -194,27 +194,27 @@ export default function ProfilesFeature() {
                     Our guided setup process helps you create a comprehensive profile in minutes, not hours.
                   </p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;A cleaning costs $150 and takes about 45 minutes. We recommend scheduling every 6 months.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;Our maintenance plan is $179/year and includes 2 tune-ups plus 15% off all repairs.&quot;</p>
                   </div>
                 </div>
 
                 <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="font-semibold text-fg mb-3">🔄 Easy Updates</h3>
                   <p className="text-muted mb-4">
-                    Change your hours, update pricing, or modify policies anytime. Changes take effect immediately.
+                    Change your pricing, update service areas, or modify seasonal offerings anytime. Changes take effect immediately.
                   </p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;We accept most major insurance plans. Please bring your insurance card to your appointment.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;We service all major brands. Emergency calls are $89 with diagnostic included.&quot;</p>
                   </div>
                 </div>
 
                 <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="font-semibold text-fg mb-3">🎨 Brand Consistency</h3>
                   <p className="text-muted mb-4">
-                    Custom branding ensures your AI assistant matches your brand voice and visual identity.
+                    Custom branding ensures your AI assistant matches your company voice and visual identity.
                   </p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;Thank you for choosing Acme Dental! We&apos;re committed to providing excellent dental care.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;Thank you for choosing Acme HVAC! We&apos;re committed to keeping your home comfortable year-round.&quot;</p>
                   </div>
                 </div>
               </div>

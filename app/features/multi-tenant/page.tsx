@@ -113,15 +113,15 @@ export default function MultiTenantFeature() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                       </svg>
                     </div>
-                    <h3 className="font-semibold text-fg mb-2">Dental Practice</h3>
+                    <h3 className="font-semibold text-fg mb-2">HVAC Company A</h3>
                     <div className="space-y-2 text-sm text-muted">
                       <div className="bg-blue-50 border border-blue-200 rounded p-2">
                         <div className="font-medium text-blue-900">Business Profile</div>
-                        <div className="text-blue-700">Hours, services, pricing</div>
+                        <div className="text-blue-700">Service area, pricing, brands</div>
                       </div>
                       <div className="bg-blue-50 border border-blue-200 rounded p-2">
                         <div className="font-medium text-blue-900">Customer Data</div>
-                        <div className="text-blue-700">Conversations, appointments</div>
+                        <div className="text-blue-700">Service calls, leads</div>
                       </div>
                       <div className="bg-blue-50 border border-blue-200 rounded p-2">
                         <div className="font-medium text-blue-900">Custom Branding</div>
@@ -137,19 +137,19 @@ export default function MultiTenantFeature() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                       </svg>
                     </div>
-                    <h3 className="font-semibold text-fg mb-2">E-commerce Store</h3>
+                    <h3 className="font-semibold text-fg mb-2">HVAC Company B</h3>
                     <div className="space-y-2 text-sm text-muted">
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <div className="font-medium text-green-900">Business Profile</div>
-                        <div className="text-green-700">Products, shipping, returns</div>
+                        <div className="text-green-700">Emergency service, installs</div>
                       </div>
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <div className="font-medium text-green-900">Customer Data</div>
-                        <div className="text-green-700">Orders, support tickets</div>
+                        <div className="text-green-700">Appointments, inquiries</div>
                       </div>
                       <div className="bg-green-50 border border-green-200 rounded p-2">
                         <div className="font-medium text-green-900">Custom Branding</div>
-                        <div className="text-green-700">Store theme, colors</div>
+                        <div className="text-green-700">Company theme, colors</div>
                       </div>
                     </div>
                   </div>
@@ -162,15 +162,15 @@ export default function MultiTenantFeature() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
-                    <h3 className="font-semibold text-fg mb-2">Service Business</h3>
+                    <h3 className="font-semibold text-fg mb-2">HVAC Company C</h3>
                     <div className="space-y-2 text-sm text-muted">
                       <div className="bg-purple-50 border border-purple-200 rounded p-2">
                         <div className="font-medium text-purple-900">Business Profile</div>
-                        <div className="text-purple-700">Services, locations, staff</div>
+                        <div className="text-purple-700">Maintenance plans, techs</div>
                       </div>
                       <div className="bg-purple-50 border border-purple-200 rounded p-2">
                         <div className="font-medium text-purple-900">Customer Data</div>
-                        <div className="text-purple-700">Bookings, inquiries</div>
+                        <div className="text-purple-700">Service history, leads</div>
                       </div>
                       <div className="bg-purple-50 border border-purple-200 rounded p-2">
                         <div className="font-medium text-purple-900">Custom Branding</div>

@@ -18,7 +18,7 @@ export default function Demo() {
               See it in action
             </h1>
             <p className="text-lg text-muted max-w-2xl mx-auto">
-              See how our AI receptionist answers customer questions about hours, pricing, and services, then handles appointment booking when customers want to schedule.
+              See how our AI assistant answers HVAC questions about emergency service, pricing, and availability, then books service calls when customers are ready.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export default function Demo() {
                     Instant Responses
                   </h4>
                   <p className="text-muted text-sm mb-4">
-                    Netia answers customer questions in seconds, not hours. No more waiting for business hours or checking voicemails.
+                    Netia answers HVAC questions in seconds, not hours. No more losing emergency calls to competitors who answer faster.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary-500">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -48,25 +48,25 @@ export default function Demo() {
 
                 <div className="bg-white border border-border rounded-lg p-6 shadow-sm">
                   <h4 className="font-display text-lg font-semibold text-fg mb-3">
-                    Smart Scheduling
+                    Service Call Booking
                   </h4>
                   <p className="text-muted text-sm mb-4">
-                    When customers want to book, Netia provides a direct link to your scheduling calendar where they can see availability and complete their booking.
+                    When customers need service, Netia shows your availability and books the appointment. Emergency repairs, maintenance visits, or installation consultations.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary-500">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                     </svg>
-                    <span>Calendar link sharing</span>
+                    <span>Books service appointments</span>
                   </div>
                 </div>
 
                 <div className="bg-white border border-border rounded-lg p-6 shadow-sm">
                   <h4 className="font-display text-lg font-semibold text-fg mb-3">
-                    Business Customization
+                    HVAC-Trained AI
                   </h4>
                   <p className="text-muted text-sm mb-4">
-                    Trained on your specific services, pricing, and business hours. Sounds like your team, not a generic bot.
+                    Trained on your specific services, pricing, brands, and service areas. Knows HVAC terminology and answers like your team would.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary-500">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

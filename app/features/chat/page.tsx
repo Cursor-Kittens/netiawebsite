@@ -14,10 +14,10 @@ export default function ChatFeature() {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="font-display text-4xl md:text-5xl font-semibold text-fg mb-4">
-              AI Chat
+              AI Chat for HVAC
             </h1>
             <p className="text-lg text-muted max-w-2xl mx-auto">
-              Intelligent conversations that feel natural and provide instant, accurate responses to your customers&apos; questions.
+              Intelligent conversations that capture emergency calls, answer HVAC questions, and book service appointments 24/7.
             </p>
           </div>
 
@@ -139,25 +139,25 @@ export default function ChatFeature() {
 
                 <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="font-semibold text-fg mb-3">Services & Pricing</h3>
-                  <p className="text-muted mb-4">&quot;What services do you offer?&quot; &quot;How much does a cleaning cost?&quot; &quot;Do you take insurance?&quot;</p>
+                  <p className="text-muted mb-4">&quot;What services do you offer?&quot; &quot;How much is a service call?&quot; &quot;Do you offer maintenance plans?&quot;</p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;We offer general dentistry, cleanings, and cosmetic procedures. A cleaning costs $150. Yes, we accept most major insurance plans.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;We offer AC repair, heating service, and new system installations. Our service call is $89, which includes diagnostic. We also have maintenance plans starting at $179/year.&quot;</p>
                   </div>
                 </div>
 
                 <div className="bg-surface border border-border rounded-lg p-6">
-                  <h3 className="font-semibold text-fg mb-3">Appointment Booking</h3>
-                  <p className="text-muted mb-4">&quot;Can I book an appointment?&quot; &quot;Do you have availability tomorrow?&quot; &quot;How do I cancel?&quot;</p>
+                  <h3 className="font-semibold text-fg mb-3">Service Call Booking</h3>
+                  <p className="text-muted mb-4">&quot;My AC isn't working!&quot; &quot;Do you have someone available today?&quot; &quot;Can I schedule a tune-up?&quot;</p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;I can help you book an appointment! Let me check our availability and get you scheduled.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;I can help you schedule service right away! We have same-day emergency slots at 3 PM and 5:30 PM. Which works better?&quot;</p>
                   </div>
                 </div>
 
                 <div className="bg-surface border border-border rounded-lg p-6">
-                  <h3 className="font-semibold text-fg mb-3">General Information</h3>
-                  <p className="text-muted mb-4">&quot;What should I bring to my appointment?&quot; &quot;Do you have parking?&quot; &quot;What&apos;s your cancellation policy?&quot;</p>
+                  <h3 className="font-semibold text-fg mb-3">HVAC Questions</h3>
+                  <p className="text-muted mb-4">&quot;What brands do you service?&quot; &quot;How often should I change my filter?&quot; &quot;Do you offer financing?&quot;</p>
                   <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
-                    <p className="text-sm text-muted italic">&quot;Please bring your ID and insurance card. We have free parking in the rear. We require 24 hours notice for cancellations.&quot;</p>
+                    <p className="text-sm text-muted italic">&quot;We service all major brands including Carrier, Trane, and Lennox. We recommend changing filters every 1-3 months. Yes, we offer 0% financing on new system installations!&quot;</p>
                   </div>
                 </div>
               </div>

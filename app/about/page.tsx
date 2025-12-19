@@ -14,10 +14,10 @@ export default function About() {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="font-display text-4xl md:text-5xl font-semibold text-fg mb-4">
-              We Know What It&apos;s Like to Miss a Sale
+              We Know What It&apos;s Like to Lose a $10K Install
             </h1>
             <p className="text-lg text-muted max-w-2xl mx-auto">
-              We built Netia because we&apos;ve been there. Missing customers, losing opportunities, watching money walk out the door. Now every small business can have the customer service of a Fortune 500 company.
+              We built Netia because we&apos;ve seen HVAC businesses lose emergency calls, miss installation quotes, and watch customers go to competitors who answer faster. Now every HVAC company can provide 24/7 service without hiring night staff.
             </p>
           </div>
 
@@ -27,10 +27,10 @@ export default function About() {
               <div>
                 <h2 className="font-display text-3xl font-semibold text-fg mb-6">Our Mission</h2>
                 <p className="text-lg text-muted mb-6">
-                  We built Netia because we&apos;ve experienced firsthand how difficult it can be to provide excellent customer service while managing all the other aspects of growing a company.
+                  We built Netia because we&apos;ve seen firsthand how HVAC businesses struggle during peak seasons—losing emergency calls at night, missing quotes during the day, and watching installation opportunities slip away.
                 </p>
                 <p className="text-muted">
-                  That&apos;s why we built Netia - to give every business access to the kind of customer service that used to be reserved for large corporations with dedicated support teams.
+                  That&apos;s why we built Netia - to give every HVAC company access to the kind of 24/7 customer service that used to require a full call center. Now you can capture every emergency repair and installation lead without hiring more staff.
                 </p>
               </div>
               <div className="bg-primary-50 border border-primary-200 rounded-lg p-8">
@@ -41,7 +41,7 @@ export default function About() {
                     </svg>
                   </div>
                   <h3 className="font-semibold text-fg mb-2">Powered by GPT-4</h3>
-                  <p className="text-sm text-muted">Advanced AI that understands context and delivers human-like responses</p>
+                  <p className="text-sm text-muted">Advanced AI that understands HVAC terminology and delivers instant, helpful responses</p>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function About() {
                 </div>
                 <h3 className="font-display text-xl font-semibold text-fg mb-4">Reliability</h3>
                 <p className="text-muted">
-                  Your customers can count on Netia to be available 24/7, providing consistent, accurate responses every time.
+                  Your customers can count on Netia to be available 24/7, providing consistent, accurate responses about service calls, pricing, and emergency availability—even at 3 AM.
                 </p>
               </div>
 
@@ -72,7 +72,7 @@ export default function About() {
                 </div>
                 <h3 className="font-display text-xl font-semibold text-fg mb-4">Security</h3>
                 <p className="text-muted">
-                  Your data is protected with enterprise-grade security. Each business gets their own secure workspace.
+                  Your customer data and business information are protected with enterprise-grade security. Each HVAC company gets their own secure workspace.
                 </p>
               </div>
 
@@ -84,7 +84,7 @@ export default function About() {
                 </div>
                 <h3 className="font-display text-xl font-semibold text-fg mb-4">Growth</h3>
                 <p className="text-muted">
-                  We grow with you. Start with our free plan and scale as your business and customer needs evolve.
+                  We grow with you. Start with our affordable plan and scale as your service area and customer base expand through every season.
                 </p>
               </div>
             </div>
@@ -92,14 +92,14 @@ export default function About() {
 
           {/* Team Section */}
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="font-display text-3xl font-semibold text-fg text-center mb-12">Built by Entrepreneurs</h2>
+            <h2 className="font-display text-3xl font-semibold text-fg text-center mb-12">Built for HVAC Pros</h2>
             <div className="bg-surface border border-border rounded-lg p-8">
               <div className="text-center">
                 <p className="text-lg text-muted mb-6">
-                  We&apos;ve been in your shoes. The frustration of missing customers, the stress of trying to be everywhere at once, the fear of losing opportunities to competitors who respond faster.
+                  We&apos;ve seen it happen: AC breaks during a heat wave, customer calls at 8 PM, no answer, they call your competitor. By morning, you&apos;ve lost a $3,000 repair and a potential $12,000 replacement customer.
                 </p>
                 <p className="text-muted">
-                  That&apos;s why we built Netia - so you never have to choose between growing your business and serving your customers. Now you can do both.
+                  That&apos;s why we built Netia - so you never have to choose between answering calls and running service calls. Now your AI assistant handles inquiries while you focus on the work.
                 </p>
               </div>
             </div>
@@ -116,16 +116,24 @@ export default function About() {
                 <div className="text-3xl font-bold text-primary-600 mb-2">24/7</div>
                 <div className="text-sm text-muted">Always Available</div>
               </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary-600 mb-2">100%</div>
+                <div className="text-sm text-muted">Inquiries Captured</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary-600 mb-2">5 min</div>
+                <div className="text-sm text-muted">Setup Time</div>
+              </div>
             </div>
           </div>
 
           {/* CTA Section */}
           <div className="text-center">
             <h2 className="font-display text-2xl font-semibold text-fg mb-4">
-              Ready to stop missing customers and start booking more appointments?
+              Ready to capture every emergency call and service opportunity?
             </h2>
             <p className="text-muted mb-8">
-              Start your free trial today and never miss another opportunity.
+              Start your free trial today and never miss another HVAC service call.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
